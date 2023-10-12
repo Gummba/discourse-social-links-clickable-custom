@@ -1,6 +1,14 @@
  .iconic-user-fields {
   a {
       margin-right: 5px;
+      color: #48aef2;
+  }
+  a:visited {
+    color: #48aef2;
+  }
+  a:hover {
+    color: #48aef2;
+    text-decoration: underline;
   }
   .fa {
       font-size: 1.2em;
