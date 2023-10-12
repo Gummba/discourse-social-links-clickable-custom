@@ -176,25 +176,29 @@
 
     <script type='text/x-handlebars' data-template-name='/connectors/user-post-names/user-card-profile-customization'>
         {{#if userIconicUserFields}}
-        <div class="iconic-user-fields">
+        <ul class="iconic-user-fields">
             {{#each userIconicUserFields as |ic|}}
             {{#if ic.icon}}
-            <span>{{ic.name}}: </span><a href="{{ic.href}}" rel="nofollow" target="_blank" title="{{ic.name}}">{{ic.href}}</a>
+            <li>
+              <span title="{{ic.name}}">{{d-icon ic.icon}}</span><a href="{{ic.href}}" rel="nofollow" target="_blank" title="{{ic.name}}">{{ic.href}}</a>
+            </li>
             {{/if}}
             {{/each}}
-        </div>
+        </ul>
         {{/if}}
     </script>
 
 
     <script type='text/x-handlebars' data-template-name='/connectors/user-card-post-names/user-card-profile-customization'>
         {{#if iconicUserFields}}
-        <div class="iconic-user-fields">
+        <ul class="iconic-user-fields">
             {{#each iconicUserFields as |ic|}}
             {{#if ic.icon}}
-            <span>{{ic.name}}: </span><a href="{{ic.href}}" rel="nofollow" target="_blank" title="{{ic.name}}">{{ic.href}}</a>
+            <li>
+              <span title="{{ic.name}}">{{d-icon ic.icon}}</span><a href="{{ic.href}}" rel="nofollow" target="_blank" title="{{ic.name}}">{{ic.href}}</a>
+            </li>
             {{/if}}
             {{/each}}
-        </div>
+        </ul>
         {{/if}}
     </script>
