@@ -24,3 +24,10 @@
       margin-top: 19px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+
+  .fa {
+   color: #{$icon-color-dark-mode};
+  }
+}
