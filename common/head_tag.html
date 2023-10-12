@@ -179,7 +179,7 @@
         <div class="iconic-user-fields">
             {{#each userIconicUserFields as |ic|}}
             {{#if ic.icon}}
-            <a href="{{ic.href}}" rel="nofollow" target="_blank" title="{{ic.name}}">{{d-icon ic.icon}}</a>
+            <span>{{ic.name}}: </span><a href="{{ic.href}}" rel="nofollow" target="_blank" title="{{ic.name}}">{{ic.href}}</a>
             {{/if}}
             {{/each}}
         </div>
@@ -192,7 +192,7 @@
         <div class="iconic-user-fields">
             {{#each iconicUserFields as |ic|}}
             {{#if ic.icon}}
-            <a href="{{ic.href}}" rel="nofollow" target="_blank" title="{{ic.name}}">{{d-icon ic.icon}}</a>
+            <span>{{ic.name}}: </span><a href="{{ic.href}}" rel="nofollow" target="_blank" title="{{ic.name}}">{{ic.href}}</a>
             {{/if}}
             {{/each}}
         </div>
