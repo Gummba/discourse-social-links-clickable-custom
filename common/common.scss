@@ -27,7 +27,7 @@
 
 @media (prefers-color-scheme: dark) {
 
-  .fa {
-   color: #{$icon-color-dark-mode};
+  .iconic-user-fields .fa {
+    color: #{$icon-color-dark-mode};
   }
 }
